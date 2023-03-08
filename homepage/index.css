@@ -5,7 +5,7 @@
 
 body {
     margin: 0;
-    weight: 100%;
+    width: 100%;
     height: 100%;
     overflow: hidden;
     color: rgba(0,0,0,.85);
@@ -72,7 +72,7 @@ body {
 
 .main::before {
     display: flex;
-    background-image: url(/assets/logo-bg.png);
+    background-image: url(assets/logo-bg.png);
     z-index: 3;
     background-position: 50%;
     background-repeat: no-repeat;
@@ -87,7 +87,7 @@ body {
 }
 
 .center-video {
-    background-image: url(/assets/center-video.png);
+    background-image: url(assets/center-video.png);
     position: absolute;
     left: 50%;
     top: 50%;
