@@ -72,7 +72,7 @@ body {
 
 .main::before {
     display: flex;
-    background-image: url(/assets/logo-bg.png);
+    background-image: url(assets/logo-bg.png);
     z-index: 3;
     background-position: 50%;
     background-repeat: no-repeat;
@@ -87,7 +87,7 @@ body {
 }
 
 .center-video {
-    background-image: url(/assets/center-video.png);
+    background-image: url(assets/center-video.png);
     position: absolute;
     left: 50%;
     top: 50%;
@@ -124,6 +124,7 @@ body {
     max-width: 460px;
     margin: 0 auto;
     min-height: 1px;
+    z-index: 9999;
 }
 
 a {
