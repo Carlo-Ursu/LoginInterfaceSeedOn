@@ -17,7 +17,6 @@ body {
 .row {
     display: flex;
     flex-flow: row wrap;
-    min-width: 0;
     justify-content: center;
 }
 
@@ -99,7 +98,6 @@ body {
     top: 50%;
     transform: translate(-50%,-50%);
     z-index: 1;
-    content: "";
     height: 330px;
     width: 330px;
     background-size: contain;
@@ -129,7 +127,6 @@ body {
 .details {
     max-width: 460px;
     margin: 0 auto;
-    min-height: 1px;
     z-index: 9999;
 }
 
@@ -177,6 +174,7 @@ a {
 @media (max-width: 1300px) {
     .video {
         width: 600px;
+        height: auto;
     }
 
     .center-video {
@@ -235,8 +233,8 @@ a {
         height: 80px;
     }
 
-    .content {
+    .row .content.dark, .row .content.light {
         max-width: 400px;
-        margin: 0 10% !important;
+        margin: 0 10%;
     }
 }
