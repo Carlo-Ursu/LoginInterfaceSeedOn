@@ -121,6 +121,7 @@ body {
 .title {
     font-weight: 700;
     font-size: 32px;
+    color: #fff;
 }
 
 .light .title {
@@ -233,10 +234,6 @@ a {
     .main::before {
         width: 80px;
         height: 80px;
-    }
-
-    .dark .title {
-        color: #fff;
     }
 
     .content {
