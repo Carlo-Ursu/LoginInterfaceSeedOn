@@ -1,3 +1,4 @@
+/* General style*/
 * {
     box-sizing: border-box;
 
@@ -13,16 +14,32 @@ body {
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
 
-.container {
-    background: #f8fbf8;
-    min-height: 100%;
-    width: 100%;
-}
 .row {
     display: flex;
     flex-flow: row wrap;
     min-width: 0;
     justify-content: center;
+}
+
+.content {
+    min-height: 90vh;
+    max-height: 98vh;
+    width: 49%;
+    max-width: 890px;
+    margin: auto;
+    border-radius: 15px;
+    display: flex;
+    align-content: center;
+    text-align: center;
+    padding: 0 10%;
+}
+
+/*Content style*/
+
+.container {
+    background: #f8fbf8;
+    min-height: 100%;
+    width: 100%;
 }
 
 .main{
@@ -48,18 +65,8 @@ body {
      margin-left: 5px;
  }
 
-.content {
-    min-height: 90vh;
-    max-height: 98vh;
-    width: 49%;
-    max-width: 890px;
-    margin: auto;
-    border-radius: 15px;
-    display: flex;
-    align-content: center;
-    text-align: center;
-    padding: 0 10%;
-}
+
+/* Side style*/
 
 .description {
     max-width: 310px;
@@ -163,4 +170,77 @@ a {
 
 .light .btn:hover {
     cursor: no-drop;
+}
+
+
+/* Media queries*/
+
+@media (max-width: 1300px) {
+    .video {
+        width: 600px !important;
+    }
+
+    .center-video {
+        width: 247px;
+        height: 247px;
+    }
+
+    .main::before {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 1160px) {
+    .dark {
+        padding: 0 15% 0 5%;
+    }
+
+    .light {
+        padding: 0 5% 0 15%;
+    }
+}
+
+@media (max-width: 900px) {
+    .row .content.dark {
+        background-image: url(assets/bg-mobile-top.png);
+        background-position: bottom;
+        width: 100%;
+        height: 49vh;
+        margin-right: auto;
+        min-height: 350px;
+        padding: 0 5% 8% !important;
+    }
+    .row .content.light {
+        background-image: url(assets/bg-mobile-bottom.png);
+        background-position: top;
+        width: 100%;
+        height: 49vh;
+        margin-left: auto;
+        min-height: 350px;
+        padding: 8% 5% 0!important;
+    }
+
+    .video {
+        width: 400px !important;
+    }
+
+    .center-video {
+        height: 165px;
+        width: 165px;
+    }
+
+    .main::before {
+        width: 80px;
+        height: 80px;
+    }
+
+    .dark .title {
+        color: #fff;
+    }
+
+    .content {
+        max-width: 400px;
+        margin: 0 10% !important;
+    }
 }
