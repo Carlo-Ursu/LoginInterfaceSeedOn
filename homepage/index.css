@@ -113,7 +113,7 @@ body {
     -webkit-transform: translate(-50%, -50%);
     z-index: 2;
     mix-blend-mode: multiply;
-    transition: all 50ms;
+    transition: all 100ms;
 }
 
 .title {
